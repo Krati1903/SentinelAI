@@ -5,8 +5,7 @@ visibility, multiple people in frame, head pose, gaze direction, and
 prohibited objects (phones, books, laptops), then produces a weighted
 risk score per frame.
 
-Built for **Python 3.12.10** on Windows 10/11. Runs entirely locally —
-no Docker, no Redis, no database.
+
 
 ## Tech Stack
 
