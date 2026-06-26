@@ -18,6 +18,12 @@ def open_camera(index: int = None):
 
     try:
         cap.set(cv2.CAP_PROP_AUTOFOCUS, 0)
+
+        focus_state = cap.get(cv2.CAP_PROP_AUTOFOCUS)
+
+        logger.info(
+    f"Autofocus state: {'Disabled' if focus_state == 0 else 'Enabled/Unsupported'}"
+    )
     except Exception as exc:
         logger.warning(f"Autofocus disable not supported on this camera: {exc}")
 
